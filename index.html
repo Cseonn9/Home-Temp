@@ -42,7 +42,7 @@ body
 {
   color: #000000;
   
-  font-size: 40px;
+  font-size: 30px;
   position: relative;
   font-weight: bold;
   font-family: "Aquawax Pro DemiBold trial",;
@@ -138,19 +138,26 @@ body {font-family: Verdana, sans-serif;}
 img {vertical-align: middle;}
 
 /* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+.slideshow-container 
+{
+  	max-width: 1000px;
+  	position: relative;
+	margin-top: 100px;
+	margin-bottom: auto;
+  	margin-left: auto;
+	margin-right: auto;
 }
 
 /* Caption text */
 .textt {
-  color: #f2f2f2;
-  font-size: 15px;
+  color: #FFFFFF;
+  
+  font-size: 40px;
   padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
+  position: relative;
+  font-weight: bold;
+  font-family: "Aquawax Pro DemiBold trial",;
+  bottom: 1px;
   width: 100%;
   text-align: center;
 }
@@ -165,14 +172,18 @@ img {vertical-align: middle;}
 }
 
 /* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+.dot 
+{
+ 	height: 15px;
+  	width: 15px;
+  	background-color: #bbb;
+  	border-radius: 50%;
+	margin-top: auto;
+	margin-bottom: 100px;
+  	margin-left: auto;
+	margin-right: auto;
+  	display: inline-block;
+  	transition: background-color 0.6s ease;
 }
 
 .active {
@@ -182,9 +193,9 @@ img {vertical-align: middle;}
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 0.5s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 0.5s;
 }
 
 @-webkit-keyframes fade {
@@ -198,9 +209,13 @@ img {vertical-align: middle;}
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+	
+ @media only screen and (max-width: 300px) 
+	
+{
+  .textheader {font-size: 11px}
 }
+	
 </style>
 
 <head>
@@ -245,6 +260,8 @@ img {vertical-align: middle;}
 
 <!-- Header Close -->
 
+<!-- Slideshow -->
+
 <div class="slideshow-container">
 
 <div class="mySlides fade">
@@ -284,7 +301,12 @@ img {vertical-align: middle;}
 </div>
 
 </div>
+
+<!-- Slideshow Close -->
+
 <br>
+
+<!-- dots --> 
 
 <div style="text-align:center">
   <span class="dot"></span> 
@@ -294,6 +316,10 @@ img {vertical-align: middle;}
   <span class="dot"></span> 
   <span class="dot"></span>  
 </div>
+
+<!-- dots close -->
+
+<!-- jscript slideshow -->
 
 <script>
 var slideIndex = 0;
@@ -313,10 +339,11 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  setTimeout(showSlides, 2000); // Change image every 4 seconds
 }
 </script>
 
+<!-- jscript slideshow close -->
 
 <!-- Registration Form -->
 
@@ -431,7 +458,7 @@ function showSlides() {
 	
 </div>
 
-<!-- Registration Form -->
+<!-- Registration Form Close -->
 
 
 </body>
