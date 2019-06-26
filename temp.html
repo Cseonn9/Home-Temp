@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+body 	
+{
+  width: auto;
+  background-image: url(bgg.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;                                                                   
+  margin-right: 200px;
+  background-attachment: fixed;
+  max-width: 100%
+}
+	
+@font-face 
+{
+    font-family: aquawax_pro_trialdemibold;
+    src: url('aquawax-pro-demibold-trial-webfont.woff2') format('woff2'),
+         url('aquawax-pro-demibold-trial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+	
+.text 
+{
+  color: #000000;
+  
+  font-size: 18px;
+  position: relative;
+  font-weight: bold;
+  font-family: "Aquawax Pro DemiBold trial",;
+  text-align: center;
+  width: auto;
+  display: inline-block;
+	
+}
+	
+.container 
+{
+  	text-align: center;
+	font-size: 20;
+			padding: 20px;
+}
+	
+.bottomleft 
+{
+  position: absolute;
+  bottom: 0px;
+  left: 16px;
+  font-size: 18px;
+}
+
+.box
+{
+	border-style: none;
+	border-color: black;
+	border-radius: 0px;
+	width: auto;
+	height: auto;
+	background-color: rgba(255,255,255, 0.3);
+	display: inline-block;
+	padding: 20px;
+}
+	
+.btn-group 
+{
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+	width: auto;
+}
+
+.btn-group-wrap
+{
+	display: inline-block;
+	padding-bottom: 10px;
+}
+
+.con 
+{
+  	text-align: center;
+	font-size: 10;
+}
+	
+.contain
+	{
+		position: absolute;
+		width: 50%;
+		text-align: center;
+		font-size: 10;
+	}
+
+</style>
+<head>
+
+	<title> Home Temp </title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker3.css" rel="stylesheet" id="bootstrap-css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="contain">
+	
+	<div class="center">
+		
+		<div class = "box">  
+			
+			<div class="text">
+
+<div class="bootstrap-iso">
+ <div class="container-fluid">
+
+    <!-- Form code begins -->
+    <form method="post">
+      <div class="form-group"> <!-- Date input -->
+               
+                <label class="control-label" for="fname">First Name</label>
+        <input class="form-control" id="fname" name="fname" placeholder="First Name" type="text"/> <br>
+                <label class="control-label" for="lname">Last Name</label>
+        <input class="form-control" id="lname" name="lname" placeholder="Last Name" type="text"/> <br>
+                <label class="control-label" for="contact">Contact #</label>
+        <input class="form-control" id="contact" name="contact" placeholder="1-868-XXX-XXXX" type="text"/> <br>
+                <label class="control-label" for="pudate">Pick-Up Date</label>
+                    
+	        	<form>
+		            <div class="form-group">
+		                <div class="input-group date" id="datepicker">
+		                    <input type="text" class="form-control" />
+		                    <span class="input-group-addon">
+		                        <span class="glyphicon glyphicon-calendar"></span>
+		                    </span>
+		                </div>
+		            </div>
+		        </form>                
+	                
+		                
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+              	
+	<script >
+	    $(function () {
+	        $('#datepicker').datepicker({
+	            format: "dd/mm/yyyy",
+	            autoclose: true,
+	            todayHighlight: true,
+		        showOtherMonths: true,
+		        selectOtherMonths: true,
+		        autoclose: true,
+		        changeMonth: true,
+		        changeYear: true,
+		        orientation: "button"
+	        });
+	    });
+	</script>		      
+		                
+        <!-- <input class="form-control" id="pupdate" name="pudate" placeholder="MM/DD/YYY" type="text"/> <br> -->
+               
+                <label class="control-label" for="dodate">Drop-Off Date</label>
+                
+        <!-- <input class="form-control" id="dodate" name="dodate" placeholder="MM/DD/YYY" type="text"/> <br> -->
+        
+	        	<form>
+		            <div class="form-group">
+		                <div class="input-group date" id="datapicker">
+		                    <input type="text" class="form-control" />
+		                    <span class="input-group-addon">
+		                        <span class="glyphicon glyphicon-calendar"></span>
+		                    </span>
+		                </div>
+		            </div>
+		        </form>        
+ 
+		        
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+              	
+	<script >
+	    $(function () {
+	        $('#datepicker').datepicker({
+	            format: "dd/mm/yyyy",
+	            autoclose: true,
+	            todayHighlight: true,
+		        showOtherMonths: true,
+		        selectOtherMonths: true,
+		        autoclose: true,
+		        changeMonth: true,
+		        changeYear: true,
+		        orientation: "button"
+	        });
+	    });
+	</script>
+                             
+                
+      </div>
+      <div class="form-group"> <!-- Submit button -->
+        <button class="btn btn-primary " name="submit" type="submit">Submit</button>
+      </div>
+     </form>
+     <!-- Form code ends --> 
+
+  
+ </div>
+</div>
+		
+			</div>
+
+		</div>
+	
+	</div>
+	
+</div>
+
+
+</body>
+</html>
