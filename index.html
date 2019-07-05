@@ -41,16 +41,13 @@ body
 .textheader
 {
   color: #000000;
-  
   font-size: 30px;
   position: relative;
   font-weight: bold;
   font-family: "Aquawax Pro DemiBold trial",;
-  text-align: right;
-  padding-left: 150px;
+  text-align: center;
   width: auto;
   display: inline-block;
-	
 }
 
 .bottomleft 
@@ -70,19 +67,19 @@ body
 
 .box
 {
-	border-style: none;
+	border-style: solid;
 	border-color: black;
 	border-radius: 0px;
 	width: auto;
 	height: auto;
-	background-color: rgba(255,255,255, 0.3);
+	background-color: white;
 	display: inline-block;
 	padding: 20px;
 }
 	
 .boxheader
 {
-	border-style: none;
+	border-style: solid;
 	border-color: black;
 	border-radius: 0px;
 	width: 100%;
@@ -108,7 +105,6 @@ body
 
 .con 
 {
-  	text-align: center;
 	font-size: 10;
 	width: max;
 }
@@ -128,6 +124,38 @@ body
 	font-size: 10;
 	padding: 20px;		
 }
+
+.confollow
+{	
+	position: inherit;
+	text-align: center;
+	font-size: 10;
+	padding: 20px;		
+}
+	
+.center
+{
+	position: relative;
+  	left: 0;
+  	top: 50%;
+ 	width: 100%;
+  	text-align: center;
+  	font-size: 18px;
+		
+}
+	
+.centerleft
+{
+	position: relative;
+  	left: 0;
+  	top: 50%;
+ 	width: 100%;
+  	text-align: left;
+  	font-size: 18px;
+		
+}
+	
+
 
 </style>
 
@@ -198,6 +226,7 @@ img {vertical-align: middle;}
   animation-duration: 0.5s;
 }
 
+
 @-webkit-keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
@@ -213,7 +242,7 @@ img {vertical-align: middle;}
  @media only screen and (max-width: 300px) 
 	
 {
-  .textheader {font-size: 11px}
+  .textheader {font-size: auto;}
 }
 	
 </style>
@@ -242,59 +271,74 @@ img {vertical-align: middle;}
 
 <div class="con">
 
-	<div class="boxheader">
-	
-		<div class="left"> 
+	<div class="boxheader">		
 		
-	<a href="https://github.com/Cseonn9/TCFR-Home/"><img border="0" alt="tcflogo" src="logo3.png" width="150" height="150"></a>
-	<a href="https://www.instagram.com/tcf_vacation_rentals/"><img border="0" alt="ig" src="ig.png" width="50" height="50" align ="middle"></a>
-	<a href="https://www.facebook.com/Tcf-Vacation-Rentals-712998632424636/"><img border="0" alt="fb" src="fb.png" width="50" height="50" align = "middle"></a>
+	<a href="https://www.instagram.com/tcf_vacation_rentals/"><img border="0" alt="ig" src="ig.png" width="40" height="40" align ="left"></a>
+	<a href="https://www.facebook.com/Tcf-Vacation-Rentals-712998632424636/"><img border="0" alt="fb" src="fb.png" width="40" height="40" align = "left"></a>
+	
+		<div class="center">
 	
 			<div class="textheader"> CRUISE IN LUXURY WITH TCF RENTALS </div>
-	
+			
 		</div>
-		
+
 	</div>
 	
 </div>
 
 <!-- Header Close -->
 
+<!-- Logo -->
+
+<div class="midcontainer"> 
+
+	<div class="center">
+
+<a href="https://github.com/Cseonn9/TCFR-Home/"><img border="0" alt="tcflogo" src="logo3.png" width="150" height="150"></a>
+
+	</div>
+
+</div>
+
+<!-- Logo Close -->
+
+
+
 <!-- Slideshow -->
 
 <div class="slideshow-container">
 
-<div class="mySlides fade">
+<div class="mySlides ">
 	<!-- <div class="numbertext">1 / 6</div> -->
 	<img src="chevy-Recovered.png" style = "width:80%">
   <div class="textt"> CHREVROLET CRUZ </div>
 </div>
 
-<div class="mySlides fade">
+<div class="mySlides ">
   <!-- <div class="numbertext">2 / 6</div> -->
   <img src="hatch_up.png" style="width:80%">
   <div class="textt"> NISSAN TIIDA HATCHBACK </div>
 </div>
 
-<div class="mySlides fade">
+<div class="mySlides ">
   <!-- <div class="numbertext">3 / 6</div> -->
   <img src="tiida-Recovered.png" style="width:80%">
   <div class="textt"> NISSAN TIIDA SEDAN </div>
 </div>
 
-<div class="mySlides fade">
+<div class="mySlides ">
   <!-- <div class="numbertext">4 / 6</div> -->
   <img src="adwUp.png" style="width:80%">
   <div class="textt"> NISSAN WINGROAD WAGON </div>
 </div>
 
-<div class="mySlides fade">
+<div class="mySlides ">
   <!-- <div class="numbertext">5 / 6</div> -->
   <img src="xtrail-Recovered.png"  style="width:80%">
   <div class="textt"> NISSAN X TRAIL SUV</div>
 </div>
 
-<div class="mySlides fade">
+<div class="mySlides ">
   <!-- <div class="numbertext">6 / 6</div> -->
   <img src="noahUp.png" style="width:80%">
   <div class="textt"> TOYOTA NOAH BUS </div>
@@ -339,7 +383,7 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 4 seconds
+  setTimeout(showSlides, 4000); // Change image every 4 seconds
 }
 </script>
 
@@ -459,6 +503,65 @@ function showSlides() {
 </div>
 
 <!-- Registration Form Close -->
+
+<!-- Contact us Page -->
+
+<div class="confollow"> 
+	
+	<div class = "box">
+		
+			<div class="text">	
+		
+	<span style="display:inline-block; width: 100;"></span> <img border="0" alt="call" src="call.png" width="40" height="40" align ="left"> (868) 495-2617 <br> 
+	
+	<br>
+	
+	<br>
+	<span style="display:inline-block; width: 100;"></span> <img border="0" alt="email" src="email.png" width="40" height="40" align ="left"> tcfvacationrentals@gmail.com <br>
+	
+	<br>
+		
+	<br>
+	<span style="display:inline-block; width: 100;"></span> <img border="0" alt="location" src="location.png" width="40" height="40" align ="left">  A.N.R Robinson International Airport  <br>
+	
+	 		</div>
+	 		
+ 		 	 	 	<div class="mapouter">
+ 		 	 	 	
+ 		 	 	 	<br>
+ 		 	 	 	
+						<div class="gmap_canvas">
+ 		 	 	 			
+ 		 	 	 			<iframe width="800" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=ANR&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+ 		 	 	 				
+ 		 	 	 			</iframe>
+ 		 	 	 			<a href="https://www.vpnchief.com"></a>
+ 		 	 	 		</div>
+ 		 	 	 		
+ 		 	 	 		<style>
+							.mapouter
+							{
+								position:relative;
+								text-align:right;
+								height: auto;
+								width: auto;
+							}
+							.gmap_canvas 
+							{
+								overflow:hidden;
+								background:none!important;
+								height: auto;
+								width: auto;
+							}
+						</style>
+		 	 	 		
+ 		 	 	 	</div>
+
+	</div>
+
+</div>
+
+<!-- Contact us Page end -->
 
 
 </body>
